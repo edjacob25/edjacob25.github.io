@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body data-spy="scroll" data-target="#navbar">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -41,9 +42,9 @@
                 <div class="col-lg-8 col-md-8">
                     <h2>Edgar Jacob Rivera Rios</h2>
                     <p>Computer engineer</p>
-                    <p><i class="fa fa-phone fa-2x"></i> <a href="tel:+521722396979">722 396 6979</a></p>
-                    <p><i class="fa fa-envelope fa-2x"></i> <a href="mailto:edjacob25@gmail.com">edjacob25@gmail.com</a></p>
-                    <p><i class="fa fa-github fa-2x"></i> <a href="http://www.github.com/edjacob25">Check out my github!</a></p>
+                    <p><i id="icon1" class="fa fa-phone fa-2x" onmouseover="$('#icon1').animateCss('swing');"></i> <a href="tel:+5217223966979">722 396 6979</a></p>
+                    <p><i id="icon2" class="fa fa-envelope fa-2x" onmouseover="$('#icon2').animateCss('swing');"></i> <a href="mailto:edjacob25@gmail.com">edjacob25@gmail.com</a></p>
+                    <p><i id="icon3" class="fa fa-github fa-2x" onmouseover="$('#icon3').animateCss('swing');"></i> <a href="http://www.github.com/edjacob25" target="_blank">Check out my github!</a></p>
                 </div>
             </div>
         </div>
@@ -238,5 +239,6 @@
 
     <script src="js/jquery-1.12.2.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
