@@ -8,7 +8,6 @@ categories: kotlin requery heroku
 First, I based my work in [this project](https://github.com/orangy/ktor-heroku-start) by Ilya Ryzhenkov but updated some things, specially the Hikari configuration at the startup time. The important changes to create a valid Hikari configuration in Kotlin, are shown below:
 
 {% highlight kotlin %}
-
 val properties = Properties().apply {
     val uri = URI(System.getenv("DATABASE_URL"))
 
@@ -20,7 +19,8 @@ val properties = Properties().apply {
     setProperty("dataSource.serverName", uri.host)
 }
 {% endhighlight %}
-And then
+
+As is recommended in the Heroku doicumentation and then you simply
 
 {% highlight kotlin %}
 val hikariConfig = HikariConfig(properties)
@@ -78,4 +78,4 @@ Requery was tough to set up due to the generation code part, which require confi
 </plugin>
 {% endhighlight %}
 
-This however, makes me do a `mvn clean install` 
+This however, makes me do a `mvn clean install` or `mvn clean test` or `mvn clean compile` in all the commands used, giving me one of the reasons to use Gradle instead
