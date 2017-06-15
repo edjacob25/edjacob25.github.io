@@ -2,7 +2,7 @@ title: Jacob's blog
 email: edjacob25@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    My blog
-baseurl: blog/
+baseurl: /
 url: "jacobrr.me"
 twitter_username: jbrr25
 github_username:  edjacob25
