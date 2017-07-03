@@ -1,7 +1,9 @@
-title: Jacob Rivera
+title: Jacob Rivera's blog
+author: Jacob Rivera
 email: edjacob25@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   My blog
+   I make posts about the technologies I'm using or experimenting with, mostly talking about the caveats
+   and little things that I found.
 baseurl:
 url: "jacobrr.me"
 twitter_username: jbrr25
