@@ -9,8 +9,9 @@ url: "jacobrr.me"
 twitter_username: jbrr25
 github_username:  edjacob25
 markdown: kramdown
-theme: minima
-gems:
+#theme: minima
+#remote_theme: erayaydin/jekyll-bulma
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile

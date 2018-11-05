@@ -2,7 +2,7 @@
 layout: post
 title: Making a Kotlin webapp with Requery and Heroku
 date: 2017-06-15 13:00:00 -0500
-categories: kotlin requery heroku
+tags: [kotlin, requery, heroku]
 ---
 
 First, I based my work in [this project](https://github.com/orangy/ktor-heroku-start) by Ilya Ryzhenkov but updated some things, specially the Hikari configuration at the startup time. The important changes to create a valid Hikari configuration in Kotlin, are shown below:

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="container content section" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header >
+    <h1 class="title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p>
+      <em datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </em>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author | escape }}</span></span>
+      {%- endif -%}</p>
+    <p>Tags:
+    {% for tag in page.tags %}
+      <em>{{ tag }}</em>{% unless forloop.last == true%}, {% endunless %}
+    {% endfor %}</p>
+  </header>
+
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a href="{{ page.url | relative_url }}" hidden></a>
+</article>
