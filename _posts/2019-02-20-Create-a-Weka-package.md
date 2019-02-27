@@ -31,7 +31,7 @@ Package.zip
 ```
 
 As we can see, the bare minimum for a Weka package is the `Description.props` and the `Package.jar`, which are a file which contains the basic information of the package, such as author(s), version, license and a url of the project and the compiled jar which contains the `.class` files with the compiled code. The `Description.props` file usually looks like this:
-```
+```properties
 # Template Description file for a Weka package
 
 # Package name (required)
