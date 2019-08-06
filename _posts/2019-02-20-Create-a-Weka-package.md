@@ -133,37 +133,37 @@ In this case, we decided to use Maven as the build system, but a `build.gradle` 
 We can observe that this file only adds the library to extend Weka from the Maven repository and specifies some properties of the project. To actually build a the project, we need to add a `<build></build>` section which really depends in whichever is the configuration or libraries of the project you are developing, however we will show a basic configuration that uses the `maven-assembly-plugin` to build the project and create the project zip file. 
 ```xml
 <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <descriptor>src/assembly/weka.xml</descriptor>
-                    <attach>false</attach>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>create-archive</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <addClasspath>true</addClasspath>
-                                </manifest>
-                            </archive>
-                            <descriptorRefs>
-                                <descriptorRef>jar-with-dependencies</descriptorRef>
-                            </descriptorRefs>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.6</version>
+            <configuration>
+                <descriptor>src/assembly/weka.xml</descriptor>
+                <attach>false</attach>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>create-archive</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                            </manifest>
+                        </archive>
+                        <descriptorRefs>
+                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 ```
 As we can see, we specify the creation of an package file, but the configuration its found in another file, specifically `src/assembly/weka.xml` which its shown here:
 ```xml
