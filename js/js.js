@@ -51,3 +51,8 @@ function animateCss(element, animationName) {
 
     node.addEventListener('animationend', handleAnimationEnd)
 }
+
+function closeNavbar() {
+    document.querySelector(".navbar-menu").classList.remove('is-active');
+    document.querySelector(".navbar-burger").classList.remove('is-active');
+}
