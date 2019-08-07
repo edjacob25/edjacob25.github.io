@@ -3,14 +3,14 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="has-navbar-fixed-top">
 
     {%- include header.html -%}
 
     {{ content }}
 
     {%- include footer.html -%}
-
+    <script src="{{ "js/js.js" | relative_url }}"></script>
   </body>
 
 </html>
