@@ -8,6 +8,7 @@ baseurl:
 url: "jacobrr.me"
 twitter_username: jbrr25
 github_username:  edjacob25
+gitlab_username:  edjacob25
 markdown: kramdown
 #theme: minima
 #remote_theme: erayaydin/jekyll-bulma
