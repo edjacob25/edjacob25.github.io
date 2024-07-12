@@ -1,2 +1,3 @@
 # Personal web page
-Can be seen at https://jacobrr.me
+Can be seen at https://jacobrr.dev
+
